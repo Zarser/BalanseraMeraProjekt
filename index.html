@@ -9,256 +9,392 @@
     <title>Balansera Mera</title>
 </head>
 <body>
-  <nav class="navbar navbar-light">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid justify-content-center">
       <a class="navbar-brand" href="#">
-        <img src="testmotion.png" alt="" width="60" height="auto">
+        <img src="/Media/balansera-mera-orange.jpg" alt="" width="200" height="auto" />
       </a>
-      <p class="h3">Balansera Mera</p>
     </div>
   </nav>
-  <ul class="nav nav-pills justify-content-center sticky-top">
-    <li class="nav-item">
-      <a class="nav-link h4" aria-current="page" href="#">Hem</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle h4 " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Rundor</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item h4" href="#">Action</a></li>
-        <li><a class="dropdown-item h4" href="#">Another action</a></li>
-        <li><a class="dropdown-item h4" href="#">Something else here</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link fw-bold h4" aria-current="page" href="#">Hem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold h4" href="#fallprevention">Information</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold h4" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rundor
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play1()" href="#"><img src="/Media/narlunda.png" class="img-fluid" alt="närlunda"></a></li>
+            <audio id="narlunda" src="/audio/närlunda.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play2()" href="#"><img src="/Media/Rosengarden.png" class="img-fluid" alt="rosengården"></a></li>
+            <audio id="rosengarden" src="/audio/rosengården.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play3()" href="#"><img src="/Media/ringstorp.png" class="img-fluid" alt="ringstorp"></a></li>
+            <audio id="ringstorp" src="/audio/ringstorps.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play4()" href="#"><img src="/Media/rosenknoppen.png" class="img-fluid" alt="Rosenknoppen"></a></li>
+            <audio id="rosenknoppen" src="/audio/rosenknoppen.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play5()" href="#"><img src="/Media/Rydebäck.png" class="img-fluid" alt="rydebäck"></a></li>
+            <audio id="rydeback" src="/audio/rydebäck.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play6()" href="#"><img src="/Media/Skoldenborg.png" class="img-fluid" alt="sköldenborg"></a></li>
+            <audio id="Skoldenborg" src="/audio/sköldenborg.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play7()" href="#"><img src="/Media/soder.png" class="img-fluid" alt="söder"></a></li>
+            <audio id="soder" src="/audio/söder.wav"></audio>
+            <li><a class="dropdown-item fw-bold h4" value="PLAY" onclick="play8()" href="#"><img src="/Media/tagaborg.png" class="img-fluid" alt="tågaborg"></a></li>
+            <audio id="tagaborg" src="/audio/tågaborg.wav"></audio>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold h4" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Kontakta</a>
+        </li>
       </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link h4" href="#fallprevention">Fallprevention</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link h4" href="#">Kontakta</a>
-    </li>
-  </ul>
-  <div class="container"></div>
-  <div class="container"></div>
-  <div class="container" id="fallprevention">
-    <p class="h5 mt-5 mb-3">
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container">
+    <div class="container justify-content-center mt-5">
+    <span class="h2">Hej Och Välkommen Till BALANSERA MERA!</span>
+  </div>
+    <p>
+<p>Balansera Mera promenader är fall-förebyggande övningar som görs under en promenad. Promenaderna finns idag som en aktivitet på ett antal träffpunkter. Promenaderna har funnits sedan 2018 och leds oftast av en personal eller volontär.</p>
+
+<p>Övningarna utförs längs med promenadslingan och finns tillgängliga på ett papper med tecknade figurer med tillhörande text på svenska. Promenaderna är framtagna av vård och omsorgsförvaltningens arbetsterapeuter och fysioterapeuter utifrån bland annat Otago och Hife som är evidensbaserade metoder.</p>
+
+<p>Vi vill öka tillgängligheten till promenaderna och övningarna genom att digitalisera dem. Det är viktigt att digitaliseringen fångar det lokala perspektivet.</p>
+
+<p><span class="h4">Varför?</span>
+Vi vill utveckla konceptet genom att digitalisera och lägga till funktioner som inte går att göra i ett pappersark. Då kan möjligheten att få mer balans i livet bli mer tillgängligt att använda och nå ut till fler målgrupper.</p>
+<p><span class="h4">
+Dessutom kan vi
+</span>
+skapa förutsättningar för invånare att förbättra sin balans och styrka när dem vill och kan, alltså ”video on demand”
+underlätta för personal och volontärer att hålla i aktiviteten
+skapa förutsättningar för personer med funktionsvariationer och språkförbistringar att delta.
+</p>
+<p><span class="h4">
+Hur?</span>
+Här på sidan visar vi filmade övningar med tydligt kroppsspråk som visar hur övningen ska utföras.</p>
+<p>
+Korta filmer med information om varför det är viktigt att träna sin balans och styrka. Filmerna bör vara textad på de största språken i Sverige.
+</p>
+<p>
+Personal som arbetar som arbetsterapeut och fysioterapeut från VOF som tar fram material i samverkan med invånare.
+</p>
+<p>
+Alternativ 1 är att göra en generell Balansera Mera promenad som kan appliceras i närområde vid träffpunkterna eller valfritt område där det finns förutsättningar att utföra övningarna på. Alternativet kan vara i en lätt och svår version av promenaden.
+</p>
+<p>
+Alternativ 2 att digitalisera befintliga Balansera Mera promenader som idag finns runt ett antal träffpunkter.
+</p>
+<p>
+Test av den digitala guiden genomförs under hösten 2021. Målet är att förstå om den digitala lösningen är mer värdeskapande än pappersvarianten.
+</p>
+    </p>
+  </div>
+  <div class="container justify-content-center">
+    <img src="/Media/bigstock old.webp" class="img-fluid" alt="work out">
+  </div>
+  <div class="container justify-content-center mt-5" id="fallprevention">
+    <p class="h2 mt-5 mb-3">
 Fallprevention på vård-och omsorgsförvaltningens
 hemsida
     </p>
-    <p class="h6">
-Bakgrund
-    </p>
-    <p>
-Fallolyckor är den olyckstyp i Sverige som orsakar flest akutbesök, inläggningar på
-sjukhus och flest dödsfall. Varje år faller cirka 70 000 personer och skadar sig så
-allvarligt att de blir inlagda på sjukhus. Drygt 1000 personer dör. De allra flesta som
-faller är 65 år och äldre, men sanningen är att alla kan falla.
-    </p>
-    <p>
-Med åldern ökar risken för att du ska ramla och få ett benbrott eller en spricka i
-skelettet. Det beror på att skelettet blir skörare, samtidigt som många också får sämre
-syn och balans. Vanligast är skador i höftleden eller handleden. De flesta som faller
-gör det hemma i bostaden. Det är vanligare att kvinnor skadar sig, eftersom
-benskörhet är vanligare hos kvinnor än hos män.
-    </p>
-    <p>
-Med enkla balansövningar och genom att hitta balansen i kylskåp och medicinskåp
-kan fallolyckor förebyggas i vardagen. Socialstyrelsen driver en årlig nationell
-kampanj för att minska fallolyckorna. I kampanjen Balansera mera uppmanas
-vårdgivare att jobba med fallprevention och hälsofrämjande aktiviteter. I kampanjen
-ingår motion, kost, medicin genomgång och hur man kan säkra sin hemmiljö.
-    </p>
-    <p class="h6">
-Historik
-    </p>
-    <p>
-Under flertal år har Socialstyrelsens nationella kampanj Balansera mera
-uppmärksammats av vård-och omsorgsförvaltningen under vecka 40. En arbetsgrupp
-bestående av arbetsterapeut och fysioterapeut i HSL och en utvecklare planerar
-aktiviteter för kampanjen tillsammans med personal på träffpunkterna. Detta är inte
-tillräckligt utan det behövs uppmärksammas under hela året.
-    </p>
-    <p class="h6">
-Önskat läge
-    </p>
-Att använda vård-och omsorgsförvaltningens hemsida för att öka kunskapen vad
-äldre personer själv kan göra för att förebygga fall. Ge tips på träning, vikten av
-näringsriktig mat, samt ha kunskap om sina mediciner och eventuella bieffekter av
-dem är tre saker som kan bidra till att minska risken att falla.
-Aktivitet som ska finnas på hemsida
-Att hålla sig fysiskt aktiv är bästa försäkringen mot att drabbas av en allvarlig
-fallskada när man blir äldre. Att skapas träningsfilmer med enkla övningar, både för
-
-styrka och balans som kan minska risken för att falla. Filmerna ska göras med fysio-
-och arbetsterapeut och tillsammans med en äldre person. Filmerna ska filmas både
-
-inomhus och i utemiljöer, här kan även stadens utomhusgym användas i Helsingborgs
-stad. Filmerna ska vara lättillgängliga och enkla för invånaren att utföra.
-Förslag på filmer som ska produceras
- Sittande rörelser
- Stående rörelse
- Balansövningar
- Så tar du dig upp från golvet
- Fallrisker i omgivningen
-
-Övrig information som ska finnas på hemsidan
-Det finns bra tips och checklistor som tagits fram av Socialstyrelsen som kan användas
-vid publicering.
-Har du eller någon du känner varit med om en fallolycka? Du är långt ifrån ensam. Alla
-kan falla och med stigande ålder ökar risken. Genom att hitta balans mellan maten,
-motionen och dina mediciner kan du minska risken att falla.
-Socialstyrelsen
-Broschyren Tips och råd för att förhindra fallolyckor innehåller tips på hur fallolyckor
-
-i vardagen kan förhindras. https://www.socialstyrelsen.se/globalassets/sharepoint-
-dokument/artikelkatalog/ovrigt/2019-5-1.pdf
-
-Mat
-Bra mat gör dig starkare
-Maten ger din kropp energi och näring samtidigt som den stärker muskler och skelett.
-Vid 30 års ålder börjar en naturlig nedbrytning av muskler och processen går allt
-snabbare efter 50. Goda matvanor har stor betydelse för att skjuta upp både naturliga
-åldersförändringar och förändringar som orsakas av sjukdom och läkemedel
-Minskad aptit är vanligt
-När man blir äldre är det vanligt att aptiten minskar. Orsakerna kan vara flera – ett
-läkemedel, att det som smakade bra förr inte längre är gott, eller att man saknar
-sällskap vid måltiderna. Som en följd av det kan man tappa lusten att både laga och äta
-mat. Var uppmärksam på om du minskar ofrivilligt i vikt och ta kontakt med din
-läkare i så fall. Om du förlorar i vikt finns risk att dina muskler blir försvagade. Det
-leder i sin tur till att du får sämre balans och risken att falla ökar. Det är bra att du äter
-minst tre huvudmål om dagen och ett par mellanmål. Ju mindre portion du äter desto
-fler måltider behöver du.
-Bra att tänka på om mat
-Jag:
- låter det inte gå för lång tid mellan måltiderna.
- äter några enkla mellanmål under dagen.
- utgår från tallriksmodellen och får i mig proteiner, fett, kolhydrater,
-vitaminer och mineraler varje dag.
- serverar varma grönsaker och rotfrukter med lite olja på till måltiden.
- ser till att få i mig tillräckligt med vätska – särskilt när det är varmt ute.
- väljer drycker som till exempel mjölk, juice eller sötad dryck om aptiten blir
-sämre eller vikten minskar.
-Källa: Socialstyrelsen
-Broschyr
-
-https://www.livsmedelsverket.se/globalassets/publikationsdatabas/broschyrer-foldrar/rad-
-om-bra-mat-for-aldre.pdf
-
-Motion
-Träning minskar risken att falla
-Regelbunden balans- och styrketräning har stor betydelse för att minska risken att
-falla. Både balans- och styrketräning ger god effekt även bland äldre personer. Det är
-aldrig för sent att börja träna.
-Regelbunden balans- och styrketräning
-Balansförmågan går att träna upp, men för att balansen ska förbättras måste
-träningen upplevas som utmanande/svår. Utgå från din nuvarande förmåga och öka
-svårighetsgraden stegvis. För att musklerna ska bli starkare är det viktigt att du tar i
-så att musklerna blir trötta. Öka belastningen/ansträngningen successivt för att
-minska risken för skador. Om träningen ska ge god effekt är det bra att träna balans
-och styrka minst 2 gånger per vecka. Men för otränade personer är även den kortaste
-promenaden eller den allra enklaste övningen bättre än ingen träning alls.
-Bra att tänka på om träning
-Jag:
- tränar styrka minst 2 gånger i veckan.
- gör balansövningar minst 2–3 gånger i veckan.
- är fysiskt aktiv minst 150 minuter per vecka och tar i så jag blir lätt andfådd.
- gör viktbärande fysiska aktiviteter dagligen.
- undviker att sitta still länge.
- har halksäkra skor med hälkappa både inomhus och utomhus.
- går inte i strumplästen.
- använder broddar när det är halt ute.
- använder gåstavar och sätter på ispiggar på vintern.
- använder skor som passar aktiviteten.
- vårdar mina fötter till exempel genom att ta hjälp av en fotvårdsspecialist.
-Källa: Socialstyrelsen
-Tips och råd
-https://www.1177.se/Skane/liv--halsa/traning-och-fysisk-halsa/
-
-https://www.socialstyrelsen.se/globalassets/sharepoint-
-dokument/artikelkatalog/ovrigt/2018-10-22.pdf
-
-Medicin
-Vissa läkemedel ökar fallrisken
-Vissa mediciner ökar risken att falla, till exempel genom att de gör dig trött eller yr.
-Därför är det viktigt att du vet hur dina mediciner fungerar – dels var för sig, dels i
-kombination med varandra. Fråga din läkare eller på apoteket. Det är särskilt viktigt
-om du får läkemedel från flera olika läkare.
-Här får du några frågor som du kan ställa till din läkare om dina mediciner:
- Varför behöver jag den här medicinen?
- Hur länge ska jag ta medicinen?
- Är det något särskilt jag ska tänka på när jag använder medicinen?
- Ökar medicinen risken för att jag ska falla, till exempel genom att jag blir yr?
- Kan medicinen öka risken att jag faller om jag tar den tillsammans med andra
-läkemedel?
- Finns det någon annan behandling jag kan få än läkemedel?
- Finns det andra läkemedel som kan vara bättre för mig än de jag tar?
- Jag har flera olika mediciner – kan jag få en läkemedelsgenomgång?
- Jag har gått ner i vikt. Behöver min medicinering ändras?
-Här får du tips på frågor som du kan ställa till farmaceuten på apoteket:
- Är någon av mina mediciner olämplig för mig som äldre?
- Kan några av mina mediciner påverka varandra?
- Kan någon av mina mediciner, enskilt eller i kombination med andra, öka
-risken att falla?
- Kan jag få råd och hjälp av apoteket om jag har svårt att ta en medicin?
- Apoteket byter ibland mina mediciner till andra sorter med andra namn och
-ibland annat utseende. Hur ska jag göra för att veta vilken som är vilken och
-undvika att ta dubbelt?
- Var inte rädd för att uppfattas som ”besvärlig”. Det handlar om din
-kropp och din hälsa och du har rätt att fråga om sådant som du undrar
-över.
-
-Bra att tänka på om mediciner
-Jag:
- tar den dos av läkemedel som jag är ordinerad.
- använder en doseringsask eller får färdigpackade dospåsar, för att inte
-glömma att ta mina mediciner och för att undvika feldosering.
- tar bara läkemedel som ordinerats till mig själv.
- går igenom mina läkemedel med min läkare en gång om året.
- frågar min läkare eller på apoteket om biverkningar och om läkemedlet kan
-påverka fallrisken.
- antecknar när jag får en ny medicin eller förändrad dos.
- är uppmärksam på effekterna av mina mediciner.
- antecknar om jag får symptom som kan vara biverkningar.
-Källa: Socialstyrelsen
-Fallrisk i hemmet
-De flesta fallolyckor sker i hemmet, här får du några tips på vad du kan göra för att
-minska risken för fall i just ditt hem
-Jag:
- har tagit bort mattor eller lagt halkskydd under dem.
- ser till att sladdar inte ligger löst på golvet.
- har tagit bort höga trösklar som jag kan snubbla över.
- har saker jag använder ofta nära till hands.
- har möblerat mitt hem så att jag kan ta mig fram lätt.
- har den belysning jag behöver.
- har en nattlampa för att kunna orientera mig i mörkret.
- tar hjälp för att tvätta fönster, byta glödlampor eller hänga upp gardiner till
-exempel från en fixartjänst.
- har mobiltelefonen nära till hands.
- har en stol i hallen att sitta på när jag tar av och på skor.
- har halkskydd i duschen/badkaret.
- har handtag på väggen intill badkaret/duschen.
- har en halkfri matta att kliva ut på när jag har duschat/badat.
- kontrollerar min syn en gång om året.
- kontrollerar min hörsel en gång om året.
- använder gånghjälpmedel om behov finns.
-Källa: Socialstyrelsen
-Fallrisk i utemiljö
-Här är några tips som minskar risken för fall utomhus.
- På vinterhalvåret är risken stor för halka, använd därför gärna broddar på
-skorna.
- Balansen är väldigt beroende av synen. Försök därför gå där det är upplyst, så
-du ser ojämnheter och håligheter i marken. Skaffa annars gärna en
-pannlampa, då har då fortfarande händerna fria.
- Använd reflex så du syns, då har andra cyklister och medtrafikanter möjlighet
-att undvika dig tidigare, så du slipper göra undanmanövrar.
- Använd gånghjälpmedel om behov finns.
-Förslag till beslut
-Att på vård-och omsorgsförvaltningens hemsida publicera en sida med
-informationsmaterial för att förebygga fallolyckor i vardagen.
-Att ge uppdrag till arbetsgruppen som arbetar med kampanjen Balansera Mera att ta
-fram material till sidan, att producera träningsfilmer i olika miljöer.
-    </p>
+    <div class="container justify-content-center">
+      <div class="row row-cols-2">
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Bakgrund</h5>
+              <p class="card-text">Fallolyckor är den olyckstyp i Sverige som orsakar flest akutbesök, inläggningar på
+                sjukhus och flest dödsfall. Varje år faller cirka 70 000 personer och skadar sig så
+                allvarligt att de blir inlagda på sjukhus. Drygt 1000 personer dör. De allra flesta som
+                faller är 65 år och äldre, men sanningen är att alla kan falla.
+                    </p>
+                    <p>
+                Med åldern ökar risken för att du ska ramla och få ett benbrott eller en spricka i
+                skelettet. Det beror på att skelettet blir skörare, samtidigt som många också får sämre
+                syn och balans. Vanligast är skador i höftleden eller handleden. De flesta som faller
+                gör det hemma i bostaden. Det är vanligare att kvinnor skadar sig, eftersom
+                benskörhet är vanligare hos kvinnor än hos män.
+                    </p>
+                    <p>
+                Med enkla balansövningar och genom att hitta balansen i kylskåp och medicinskåp
+                kan fallolyckor förebyggas i vardagen. Socialstyrelsen driver en årlig nationell
+                kampanj för att minska fallolyckorna. I kampanjen Balansera mera uppmanas
+                vårdgivare att jobba med fallprevention och hälsofrämjande aktiviteter. I kampanjen
+                ingår motion, kost, medicin genomgång och hur man kan säkra sin hemmiljö.
+                    </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Historik</h5>
+              <p class="card-text">
+                  Under flertal år har Socialstyrelsens nationella kampanj Balansera mera
+                  uppmärksammats av vård-och omsorgsförvaltningen under vecka 40. En arbetsgrupp
+                  bestående av arbetsterapeut och fysioterapeut i HSL och en utvecklare planerar
+                  aktiviteter för kampanjen tillsammans med personal på träffpunkterna. Detta är inte
+                  tillräckligt utan det behövs uppmärksammas under hela året.
+                      </p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Önskat läge</h5>
+              <p class="card-text">
+                <p>Att använda vård-och omsorgsförvaltningens hemsida för att öka kunskapen vad
+                  äldre personer själv kan göra för att förebygga fall. Ge tips på träning, vikten av
+                  näringsriktig mat, samt ha kunskap om sina mediciner och eventuella bieffekter av
+                  dem är tre saker som kan bidra till att minska risken att falla.
+                  Aktivitet som ska finnas på hemsida
+                  Att hålla sig fysiskt aktiv är bästa försäkringen mot att drabbas av en allvarlig
+                  fallskada när man blir äldre. Att skapas träningsfilmer med enkla övningar, både för
+                  </p>
+                  <p>
+                  styrka och balans som kan minska risken för att falla. Filmerna ska göras med fysio-
+                  och arbetsterapeut och tillsammans med en äldre person. Filmerna ska filmas både
+                  </p>
+                  <p>
+                  inomhus och i utemiljöer, här kan även stadens utomhusgym användas i Helsingborgs
+                  stad. Filmerna ska vara lättillgängliga och enkla för invånaren att utföra.
+                  Förslag på filmer som ska produceras:
+                  <ul>
+                    <li>Sittande rörelser</li>
+                    <li>Stående rörelse</li>
+                    <li>Balansövningar</li>
+                    <li>Så tar du dig upp från golvet</li>
+                    <li>Fallrisker i omgivningen</li>
+                  </ul>
+                  <p>
+                  Övrig information som ska finnas på hemsidan
+                  Det finns bra tips och checklistor som tagits fram av Socialstyrelsen som kan användas
+                  vid publicering.
+                  Har du eller någon du känner varit med om en fallolycka? Du är långt ifrån ensam. Alla
+                  kan falla och med stigande ålder ökar risken. Genom att hitta balans mellan maten,
+                  motionen och dina mediciner kan du minska risken att falla.
+                  Socialstyrelsen
+                  Broschyren Tips och råd för att förhindra fallolyckor innehåller tips på hur fallolyckor
+                  i vardagen kan förhindras.
+                </p>
+                <p>
+                  <a href="https://www.socialstyrelsen.se/globalassets/sharepoint-
+                  dokument/artikelkatalog/ovrigt/2019-5-1.pdf">https://www.socialstyrelsen.se/globalassets/sharepoint-
+                  dokument/artikelkatalog/ovrigt/2019-5-1.pdf</a>
+                </p>
+                      </p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Mat</h5>
+              <p class="card-text">
+                <p>
+                  Bra mat gör dig starkare
+                  Maten ger din kropp energi och näring samtidigt som den stärker muskler och skelett.
+                  Vid 30 års ålder börjar en naturlig nedbrytning av muskler och processen går allt
+                  snabbare efter 50. Goda matvanor har stor betydelse för att skjuta upp både naturliga
+                  åldersförändringar och förändringar som orsakas av sjukdom och läkemedel
+                  Minskad aptit är vanligt.
+                  </p>
+                  <p>
+                  När man blir äldre är det vanligt att aptiten minskar. Orsakerna kan vara flera – ett
+                  läkemedel, att det som smakade bra förr inte längre är gott, eller att man saknar
+                  sällskap vid måltiderna. Som en följd av det kan man tappa lusten att både laga och äta
+                  mat. Var uppmärksam på om du minskar ofrivilligt i vikt och ta kontakt med din
+                  läkare i så fall. Om du förlorar i vikt finns risk att dina muskler blir försvagade. Det
+                  leder i sin tur till att du får sämre balans och risken att falla ökar. Det är bra att du äter
+                  minst tre huvudmål om dagen och ett par mellanmål. Ju mindre portion du äter desto
+                  fler måltider behöver du.
+                  </p>
+                  <p>
+                  Bra att tänka på om mat
+                  </p>
+                  <ul>
+                  Jag:
+                  <li>låter det inte gå för lång tid mellan måltiderna.</li>
+                  <li>äter några enkla mellanmål under dagen.</li>
+                  <li>utgår från tallriksmodellen och får i mig proteiner, fett, kolhydrater,
+                  vitaminer och mineraler varje dag.</li>
+                  <li>serverar varma grönsaker och rotfrukter med lite olja på till måltiden.</li>
+                  <li>ser till att få i mig tillräckligt med vätska – särskilt när det är varmt ute.</li>
+                  <li>väljer drycker som till exempel mjölk, juice eller sötad dryck om aptiten blir
+                  sämre eller vikten minskar.</li>
+                  </ul>
+                  <p>
+                  Källa: Socialstyrelsen Broschyr</p>
+                  
+                  <a href="https://www.livsmedelsverket.se/globalassets/publikationsdatabas/broschyrer-foldrar/rad-
+                  om-bra-mat-for-aldre.pdf">https://www.livsmedelsverket.se/globalassets/publikationsdatabas/broschyrer-foldrar/rad-
+                  om-bra-mat-for-aldre.pdf</a>
+                      </p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Motion</h5>
+              <p class="card-text">
+                <p>
+                  Träning minskar risken att falla
+                  Regelbunden balans- och styrketräning har stor betydelse för att minska risken att
+                  falla. Både balans- och styrketräning ger god effekt även bland äldre personer. Det är
+                  aldrig för sent att börja träna.
+                  Regelbunden balans- och styrketräning
+                  Balansförmågan går att träna upp, men för att balansen ska förbättras måste
+                  träningen upplevas som utmanande/svår. Utgå från din nuvarande förmåga och öka
+                  svårighetsgraden stegvis. För att musklerna ska bli starkare är det viktigt att du tar i
+                  så att musklerna blir trötta. Öka belastningen/ansträngningen successivt för att
+                  minska risken för skador. Om träningen ska ge god effekt är det bra att träna balans
+                  och styrka minst 2 gånger per vecka. Men för otränade personer är även den kortaste
+                  promenaden eller den allra enklaste övningen bättre än ingen träning alls.
+                </p>
+                <p>
+                  Bra att tänka på om träning
+                </p>
+                <ul>
+                Jag:
+                <li>tränar styrka minst 2 gånger i veckan.</li>
+                <li>gör balansövningar minst 2–3 gånger i veckan.</li>
+                <li>är fysiskt aktiv minst 150 minuter per vecka och tar i så jag blir lätt andfådd.</li>
+                <li>gör viktbärande fysiska aktiviteter dagligen.</li>
+                <li>undviker att sitta still länge.</li>
+                <li>har halksäkra skor med hälkappa både inomhus och utomhus.</li>
+                <li>går inte i strumplästen.</li>
+                <li>använder broddar när det är halt ute.</li>
+                <li>använder gåstavar och sätter på ispiggar på vintern.</li>
+                <li>använder skor som passar aktiviteten.</li>
+                <li>vårdar mina fötter till exempel genom att ta hjälp av en fotvårdsspecialist.</li>
+                </ul>
+                <p>Källa: Socialstyrelsen Broschyr Tips och råd</p>
+                <p>
+                  <a href="https://www.1177.se/Skane/liv--halsa/traning-och-fysisk-halsa/">https://www.1177.se/Skane/liv--halsa/traning-och-fysisk-halsa/</a>
+                </p>
+                
+                <a href="https://www.socialstyrelsen.se/globalassets/sharepoint-
+                dokument/artikelkatalog/ovrigt/2018-10-22.pdf">https://www.socialstyrelsen.se/globalassets/sharepoint-
+                dokument/artikelkatalog/ovrigt/2018-10-22.pdf</a>
+                      </p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Medicin</h5>
+              <p class="card-text">
+                <p>
+                  Vissa läkemedel ökar fallrisken
+                  Vissa mediciner ökar risken att falla, till exempel genom att de gör dig trött eller yr.
+                  Därför är det viktigt att du vet hur dina mediciner fungerar – dels var för sig, dels i
+                  kombination med varandra. Fråga din läkare eller på apoteket. Det är särskilt viktigt
+                  om du får läkemedel från flera olika läkare.
+                </p>
+                <p>
+                  <ul>
+                  Här får du några frågor som du kan ställa till din läkare om dina mediciner:
+                  <li>Varför behöver jag den här medicinen?</li>
+                  <li>Hur länge ska jag ta medicinen?</li>
+                  <li>Är det något särskilt jag ska tänka på när jag använder medicinen?</li>
+                  <li>Ökar medicinen risken för att jag ska falla, till exempel genom att jag blir yr?</li>
+                  <li>Kan medicinen öka risken att jag faller om jag tar den tillsammans med andra
+                  läkemedel?</li>
+                  <li>Finns det någon annan behandling jag kan få än läkemedel?</li>
+                  <li>Finns det andra läkemedel som kan vara bättre för mig än de jag tar?</li>
+                  <li>Jag har flera olika mediciner – kan jag få en läkemedelsgenomgång?</li>
+                  <li>Jag har gått ner i vikt. Behöver min medicinering ändras?</li>
+                  Här får du tips på frågor som du kan ställa till farmaceuten på apoteket:
+                  <li>Är någon av mina mediciner olämplig för mig som äldre?</li>
+                  <li>Kan några av mina mediciner påverka varandra?</li>
+                  <li>Kan någon av mina mediciner, enskilt eller i kombination med andra, öka
+                  risken att falla?</li>
+                  <li>Kan jag få råd och hjälp av apoteket om jag har svårt att ta en medicin?</li>
+                  <li>Apoteket byter ibland mina mediciner till andra sorter med andra namn och
+                  ibland annat utseende. Hur ska jag göra för att veta vilken som är vilken och
+                  undvika att ta dubbelt?</li>
+                  <li>Var inte rädd för att uppfattas som ”besvärlig”. Det handlar om din
+                  kropp och din hälsa och du har rätt att fråga om sådant som du undrar
+                  över.</li>
+                </ul>
+                </p>
+                <p>
+                Bra att tänka på om mediciner
+                </p>
+                <ul>
+                Jag:
+                <li>tar den dos av läkemedel som jag är ordinerad.</li>
+                <li>använder en doseringsask eller får färdigpackade dospåsar, för att inte
+                glömma att ta mina mediciner och för att undvika feldosering.</li>
+                <li>tar bara läkemedel som ordinerats till mig själv.</li>
+                <li>går igenom mina läkemedel med min läkare en gång om året.</li>
+                <li>frågar min läkare eller på apoteket om biverkningar och om läkemedlet kan
+                påverka fallrisken.</li>
+                <li>antecknar när jag får en ny medicin eller förändrad dos.</li>
+                <li>är uppmärksam på effekterna av mina mediciner.</li>
+                <li>antecknar om jag får symptom som kan vara biverkningar.</li>
+                Källa: Socialstyrelsen
+                </ul>
+                      </p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: auto;">
+            <div class="card-body">
+              <h5 class="card-title">Fallrisk</h5>
+              <p class="card-text">
+                <ul>
+                  Här är några tips som minskar risken för fall utomhus.
+                <li>På vinterhalvåret är risken stor för halka, använd därför gärna broddar på
+                  skorna.</li>
+                <li>Balansen är väldigt beroende av synen. Försök därför gå där det är upplyst, så
+                  du ser ojämnheter och håligheter i marken. Skaffa annars gärna en
+                  pannlampa, då har då fortfarande händerna fria.</li>
+                <li>Använd reflex så du syns, då har andra cyklister och medtrafikanter möjlighet
+                  att undvika dig tidigare, så du slipper göra undanmanövrar.</li>
+                <li>Använd gånghjälpmedel om behov finns.</li>
+              </ul>
+              <p>Förslag till beslut</p>
+              <p>Att på vård-och omsorgsförvaltningens hemsida publicera en sida med
+              informationsmaterial för att förebygga fallolyckor i vardagen.
+              Att ge uppdrag till arbetsgruppen som arbetar med kampanjen Balansera Mera att ta
+              fram material till sidan, att producera träningsfilmer i olika miljöer.</p>
+                      </p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="container" id="kontakta"></div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
   <!--Js bundle script-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>
